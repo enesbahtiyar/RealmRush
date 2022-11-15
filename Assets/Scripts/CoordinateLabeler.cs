@@ -21,6 +21,11 @@ public class CoordinateLabeler : MonoBehaviour
             DisplayCoordinates();
             UpdateObjectName();
         }
+        else
+        {
+            DisplayCoordinates();
+            UpdateObjectName();
+        }
         
     }
 
