@@ -18,10 +18,10 @@ public class CoordinateLabeler : MonoBehaviour
 
     private void Awake()
     {
-        DisplayCoordinates();
         Label = GetComponent<TextMeshPro>();
         Label.enabled = false;
-        waypoint = GetComponentInParent<Waypoint>();      
+        waypoint = GetComponentInParent<Waypoint>();
+        DisplayCoordinates();
     }
 
     void Update()
