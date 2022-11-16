@@ -5,6 +5,7 @@ using TMPro;
 using System;
 
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabeler : MonoBehaviour
 {
     [Header("Text colors above the tiles")]
@@ -20,6 +21,7 @@ public class CoordinateLabeler : MonoBehaviour
     {
         Label = GetComponent<TextMeshPro>();
         Label.enabled = false;
+
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
     }
@@ -32,7 +34,7 @@ public class CoordinateLabeler : MonoBehaviour
             UpdateObjectName();
         }
 
-        ColorCoordinates();
+        SetLabelColor();
         ToggleLabels();
         
     }
@@ -45,7 +47,7 @@ public class CoordinateLabeler : MonoBehaviour
         }
     }
 
-    private void ColorCoordinates()
+    private void SetLabelColor()
     {
         if (waypoint.IsPlaceable == true)
             Label.color = defaultColor;
