@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ac02c4677ced244a37259d518b97cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 25
   projectileParticles: {fileID: 5926295156968496239}
   weapon: {fileID: 3144582324300694500}
 --- !u!114 &1874344854359063172
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14945a94e97f5c64a8047df5fc6a75fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buildCost: 75
 --- !u!1 &6131056645070147807
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +253,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -262,7 +263,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1013,7 +1014,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.75
       minScalar: 10
       maxCurve:
         serializedVersion: 2
